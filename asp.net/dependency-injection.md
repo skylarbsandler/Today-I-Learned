@@ -12,8 +12,9 @@ A dependency is an object that relies on another object. Dependency Injection is
 
 ## Now for a Demonstration:
 
-For this example, we have a `Person` class that requires a `Name` object to be constructed. Without any knowledge of Dependency Injection, you might create a `Name` object inside the ‘Person’ class like this: 
+For this example, we have a `Person` class that requires a `Name` object to be constructed. Without any knowledge of Dependency Injection, you might create a `Name` object inside the ‘Person’ class like this:
 
+![image](https://github.com/skylarbsandler/Today-I-Learned/assets/95989203/51bb732e-cdf7-4d3a-aa8d-e2cd2792a7a6)
 
 While this will get the job done, it could cause headaches down the road. This approach tightly couples the `Person` and `Name` classes. If you ever wanted to change `Name` to a different implementation, you would have to change both classes. This may seem like no big deal with only two classes, but imagine if 100 other classes used the `Name` object. Additionally, our current code makes it difficult to create a mock of `Name` for testing.
 
@@ -21,11 +22,11 @@ While this will get the job done, it could cause headaches down the road. This a
 
 To implement Dependency Injection, we can modify the `Person` class to accept a `Name` object through its constructor:
 
-
-
+![image](https://github.com/skylarbsandler/Today-I-Learned/assets/95989203/688e5a00-4514-4372-867c-b4b836739430)
 
 Now, when creating a `Person` object, you can inject a `Name` object:
 
+![image](https://github.com/skylarbsandler/Today-I-Learned/assets/95989203/10dbfa70-019a-4bcc-b248-679cca5b9f2d)
 
 This decouples the `Person` class from the `Name` class, making our code more flexible and maintainable.
 

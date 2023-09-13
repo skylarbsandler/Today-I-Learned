@@ -14,7 +14,7 @@ A dependency is an object that relies on another object. Dependency Injection is
 
 For this example, we have a `Person` class that requires a `Name` object to be constructed. Without any knowledge of Dependency Injection, you might create a `Name` object inside the ‘Person’ class like this:
 
-![image](https://github.com/skylarbsandler/Today-I-Learned/assets/95989203/51bb732e-cdf7-4d3a-aa8d-e2cd2792a7a6)
+![image](https://github.com/skylarbsandler/Today-I-Learned/assets/95989203/b9d23e8e-aff6-4af8-ac6d-b7dd3320b54e)
 
 While this will get the job done, it could cause headaches down the road. This approach tightly couples the `Person` and `Name` classes. If you ever wanted to change `Name` to a different implementation, you would have to change both classes. This may seem like no big deal with only two classes, but imagine if 100 other classes used the `Name` object. Additionally, our current code makes it difficult to create a mock of `Name` for testing.
 

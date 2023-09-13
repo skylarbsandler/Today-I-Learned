@@ -31,13 +31,13 @@ Now, when creating a `Person` object, you can inject a `Name` object:
 This decouples the `Person` class from the `Name` class, making our code more flexible and maintainable.
 
 This is just one of many, many applications, but as you can see, Dependency Injection has a lot of benefits. However, as with most software concepts, it does not come without some drawbacks:
-It can require more upfront effort to configure and manage dependency which can require extra code and configuration files.
-Added complexity; can make code difficult to trace because it separates behavior from construction
-Increase performance overhead as dependency injections need to create and inject the dependencies at runtime
+- It can require more upfront effort to configure and manage dependency which can require extra code and configuration files.
+- Added complexity; can make code difficult to trace because it separates behavior from construction
+- Increase performance overhead as dependency injections need to create and inject the dependencies at runtime
 
 While these risks are important to keep in mind, when used correctly, Dependency Injection adds a lot to your code in terms of flexibility, testability, and maintainability. 
 
 If you want to dive in deeper, here are some Dependency Injection resources I really enjoyed:
-[Dependency Injection in C# (2023)](https://www.c-sharpcorner.com/UploadFile/85ed7a/dependency-injection-in-C-Sharp/)
-[Dependency Injection Design Pattern in C#](https://dotnettutorials.net/lesson/dependency-injection-design-pattern-csharp/#google_vignette)
-[Dependency Injection for Absolute Beginners with C# and .NET](https://www.youtube.com/watch?v=tTJetZj3vg0)
+- [Dependency Injection in C# (2023)](https://www.c-sharpcorner.com/UploadFile/85ed7a/dependency-injection-in-C-Sharp/)
+- [Dependency Injection Design Pattern in C#](https://dotnettutorials.net/lesson/dependency-injection-design-pattern-csharp/#google_vignette)
+- [Dependency Injection for Absolute Beginners with C# and .NET](https://www.youtube.com/watch?v=tTJetZj3vg0)
